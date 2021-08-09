@@ -4,11 +4,12 @@
   "description": "The frontend of a dream.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "webpack serve",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/saeedandalib/paper-clip.git"
+    "url": "git+https://github.com/SaeedAndalib/paper-clip.git"
   },
   "keywords": [
     "frontend",
@@ -19,7 +20,16 @@
   "author": "Saeed Andalib <saeedandalib5@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/saeedandalib/paper-clip/issues"
+    "url": "https://github.com/SaeedAndalib/paper-clip/issues"
   },
-  "homepage": "https://gitlab.com/saeedandalib/paper-clip#readme"
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
 }

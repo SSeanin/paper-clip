@@ -5,7 +5,8 @@ module.exports = {
     mode: "development",
     entry: ['./src/index.js'],
     output: {
-        path: `${path.resolve(__dirname, 'dist')}`
+        path: `${path.resolve(__dirname, 'dist')}`,
+        assetModuleFilename: "images/[hash][name][ext]"
     },
     module: {
         rules: [
@@ -16,6 +17,14 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /.(htm|html)$/i,
+                use: ['html-loader'],
             }
         ]
     },

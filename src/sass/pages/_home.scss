@@ -1,0 +1,15 @@
+.header {
+  background-color: $color-primary;
+}
+
+.section-body {
+  background-color: $color-secondary;
+
+  grid-column: center-start / center-end;
+}
+
+.section-find-me {
+  background-color: $color-accent;
+
+  grid-column: full-start / full-end;
+}

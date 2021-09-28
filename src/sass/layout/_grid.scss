@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-rows: [header-start] 6rem [header-end];
+  grid-template-columns: [full-start] minmax(8rem, 1fr)
+          [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end]
+          minmax(8rem, 1fr) [full-end];
+
+  &--home {
+    height: 100vh;
+
+    grid-template-rows: [header-start] 6rem [header-end body-start] 1fr [body-end find-me-start] 7rem [find-me-end];
+  }
+
+  .header {
+    grid-column: full-start / full-end;
+  }
+}

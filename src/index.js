@@ -1,2 +1,5 @@
+// Main sass file
 import './sass/main.scss'
-import './assets/img/animated-name-parallel.svg'
+
+// All assets
+require.context('../assets', true, /\.(png|jpg|jpeg|svg|)$/i);

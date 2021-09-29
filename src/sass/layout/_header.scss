@@ -7,7 +7,6 @@
   }
 
   display: flex;
-  align-items: center;
 
   &__logo {
     height: 100%;
@@ -60,5 +59,11 @@
       text-transform: capitalize;
       margin: auto 0;
     }
+  }
+
+  &__cta {
+    align-self: center;
+    margin-right: 2rem;
+    margin-left: -2rem;
   }
 }

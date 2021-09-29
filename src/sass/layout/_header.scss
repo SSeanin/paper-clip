@@ -27,8 +27,23 @@
   &__nav-item {
     display: flex;
     align-items: center;
+    flex-flow: column;
+
     padding: 0 3rem;
-    border-bottom: 1px solid transparent;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $color-primary-light;
+      transform: scaleX(0);
+      transition: transform .2s;
+    }
+
+    &:hover::after,
+    &--active::after {
+      transform: scaleX(1);
+    }
   }
 
   &__nav-link {
@@ -38,6 +53,7 @@
       display: block;
       text-decoration: none;
       text-transform: capitalize;
+      margin: auto 0;
     }
   }
 }

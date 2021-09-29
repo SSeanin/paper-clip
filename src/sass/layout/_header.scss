@@ -1,5 +1,10 @@
 .header {
-  background-color: $color-blue-gray;
+  background-color: rgba($color-blue-gray, .95);
+
+  @supports (backdrop-filter: blur()) {
+    background-color: rgba($color-blue-gray, .75);
+    backdrop-filter: blur(1rem);
+  }
 
   display: flex;
   align-items: center;
@@ -35,7 +40,7 @@
       content: "";
       height: 2px;
       width: 100%;
-      background-color: $color-primary-dark;
+      background-color: $color-secondary-dark;
       transform: scaleX(0);
       transition: transform .2s;
     }

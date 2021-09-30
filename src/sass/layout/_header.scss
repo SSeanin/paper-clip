@@ -1,11 +1,5 @@
 .header {
-  background-color: rgba($color-blue-gray, .95);
-  box-shadow: 0 1rem 2rem rgba($color-black, .15);
-
-  @supports (backdrop-filter: blur()) {
-    background-color: rgba($color-blue-gray, .75);
-    backdrop-filter: blur(1rem);
-  }
+  @include blur-blue-gray;
 
   display: flex;
 

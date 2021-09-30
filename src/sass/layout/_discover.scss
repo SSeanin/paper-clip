@@ -1,0 +1,52 @@
+.section-discover {
+  @include blur-blue-gray;
+
+  border-top-left-radius: $border-radius-large;
+  border-top-right-radius: $border-radius-large;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &__item {
+    display: block;
+  }
+
+  &__item-logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: block;
+    fill: $color-gray-dark;
+    transition: all .2s;
+
+    &--github {
+      border-bottom: black;
+      &:hover {
+        fill: #333;
+      }
+    }
+
+    &--gmail {
+      &:hover {
+        fill: #d14836;
+      }
+    }
+
+    &--linkedin {
+      &:hover {
+        fill: #0077b5;
+      }
+    }
+
+    &--twitter {
+      &:hover {
+        fill: #1da1f2;
+      }
+    }
+  }
+}

@@ -1,11 +1,9 @@
-.section-body {
+.main--home {
   grid-column: center-start / center-end;
 }
 
-.section-find-me {
-  background-color: $color-accent;
-
-  grid-column: full-start / full-end;
+.section-discover {
+  grid-column: col-start 4 / col-end 5;
 }
 
 .container--home {

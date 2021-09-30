@@ -1,5 +1,5 @@
 // ----------------- Blur ----------------------
-@mixin blur-blue-gray() {
+@mixin blur-blue-gray-heavy() {
   background-color: rgba($color-blue-gray, .95);
   box-shadow: 0 1rem 2rem rgba($color-black, .25);
 

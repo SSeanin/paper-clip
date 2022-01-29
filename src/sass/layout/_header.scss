@@ -1,7 +1,15 @@
-.header {
-  @include blur-blue-gray-heavy;
-
+.nav-bar {
   display: flex;
+
+  grid-column: full-start / full-end;
+  background-color: transparent;
+  height: 6rem;
+
+  &--active {
+    @include blur-blue-gray-heavy;
+
+    height: 5.2rem;
+  }
 
   &__logo {
     height: 100%;

@@ -3,11 +3,6 @@
 }
 
 .section-discover {
+  grid-row: discover-start / discover-end;
   grid-column: col-start 4 / col-end 5;
-}
-
-.container--home {
-  background: linear-gradient(to right bottom, rgba($color-blue-gray, .15), rgba($color-blue-gray, .15)),
-  url("../../assets/img/hero-large.jpg") center;
-  background-size: cover;
 }

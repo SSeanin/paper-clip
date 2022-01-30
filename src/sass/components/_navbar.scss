@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-between;
 
-  // Spanning the whole width of the screen
-  grid-column: full-start / full-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  // Spanning the full width of container
+  width: 100%;
   // When not active, don't show background color
   background-color: transparent;
   height: 6rem;
@@ -11,7 +15,7 @@
   &--active {
     @include blur-blue-gray-heavy;
 
-    height: 5.2rem;
+    height: 5.5rem;
   }
 
   &__logo {

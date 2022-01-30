@@ -15,9 +15,16 @@
   }
 
   &__logo {
+    opacity: 0;
     height: 100%;
     margin-left: 1.4rem;
     margin-right: -1.4rem;
+
+    transition: opacity .2s;
+  }
+
+  &--active &__logo {
+    opacity: 1;
   }
 
   &__nav {

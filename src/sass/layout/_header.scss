@@ -1,0 +1,7 @@
+.header {
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(to right bottom, rgba($color-gray, .95), rgba($color-gray-light, .95)),
+  url("/assets/img/hero-large.jpg");
+  background-size: cover;
+}

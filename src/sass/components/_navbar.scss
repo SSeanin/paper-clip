@@ -17,6 +17,7 @@
   // When not active, don't show background color
   background-color: transparent;
   height: 6rem;
+  transition: all .2s;
 
   &--active {
     @include blur-blue-gray-heavy;

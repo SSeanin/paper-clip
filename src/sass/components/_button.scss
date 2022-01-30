@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     background-color: $color-primary;
@@ -30,11 +31,18 @@
   &--cta {
     &:link,
     &:visited {
+      padding: 1.3rem 5rem;
+      font-size: 2rem;
       background-color: $color-primary-light;
     }
 
     &:active {
       background-color: $color-primary;
     }
+  }
+
+  &--animated {
+    animation: fadeInBottom .7s ease-out .75s;
+    animation-fill-mode: backwards;
   }
 }

@@ -14,13 +14,4 @@
   &__text-box {
     text-align: center;
   }
-
-  // Bigger CTA button
-  &__cta {
-    &:link,
-    &:visited {
-      padding: 1.5rem 5rem;
-      font-size: 2rem;
-    }
-  }
 }

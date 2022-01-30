@@ -1,7 +1,10 @@
 .container {
   display: grid;
-  grid-template-rows: [header-start] 95vh [header-end];
   grid-template-columns: [full-start] minmax(8rem, 1fr)
           [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end]
           minmax(8rem, 1fr) [full-end];
+
+  &--home {
+    grid-template-rows: [header-start] 95vh [header-end];
+  }
 }

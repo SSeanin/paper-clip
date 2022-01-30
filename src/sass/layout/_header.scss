@@ -4,4 +4,21 @@
   background-image: linear-gradient(to right bottom, rgba($color-gray, .95), rgba($color-gray-light, .95)),
   url("/assets/img/hero-large.jpg");
   background-size: cover;
+
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+
+  &__text-box {
+    text-align: center;
+  }
+
+  &__cta {
+    &:link,
+    &:visited {
+      padding: 1.5rem 5rem;
+      font-size: 2rem;
+    }
+  }
 }

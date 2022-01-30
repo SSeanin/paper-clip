@@ -2,9 +2,15 @@
   display: flex;
   justify-content: space-between;
 
-  position: fixed;
+  // Navbar will be in the flow of page by default
+  position: sticky;
   top: 0;
   left: 0;
+
+  // Navbar can be brought out of flow of the page
+  &--out-of-flow {
+    position: fixed;
+  }
 
   // Spanning the full width of container
   width: 100%;

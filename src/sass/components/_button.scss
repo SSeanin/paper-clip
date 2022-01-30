@@ -30,7 +30,11 @@
   &--cta {
     &:link,
     &:visited {
-      background-color: $color-secondary-dark;
+      background-color: $color-primary-light;
+    }
+
+    &:active {
+      background-color: $color-primary;
     }
   }
 }

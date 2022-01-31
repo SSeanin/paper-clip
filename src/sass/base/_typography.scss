@@ -13,8 +13,6 @@ body {
 .heading-primary {
   backface-visibility: hidden;
   margin-bottom: 5.5rem;
-  // To prevent layout shift
-  overflow: hidden;
 
   &--main {
     text-transform: uppercase;
@@ -28,7 +26,9 @@ body {
   }
 
   &--sub {
-    display: block;
+    // To prevent layout shift
+    display: inline-block;
+
     letter-spacing: .5rem;
     font-size: 3rem;
     font-weight: 500;

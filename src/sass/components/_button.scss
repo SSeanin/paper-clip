@@ -1,43 +1,73 @@
 .btn {
+  // These styles apply to all the element using .btn class
   &,
   &:link,
   &:visited {
-    background-color: $color-primary;
-    border-radius: 50rem;
-    padding: .5rem 2rem;
-    text-transform: uppercase;
     font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
     text-decoration: none;
-    color: $color-gray;
-    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     display: inline-block;
-    border: none;
     cursor: pointer;
-    outline: none;
-
+    border: none;
+    border-radius: $border-radius-small;
     transition: all .2s;
   }
 
-  &:hover {
+
+  // Outlined button
+  &--ghost,
+  &--ghost:link,
+  &--ghost:visited {
+    padding: .3rem .7rem;
+    color: $color-primary;
+    outline: 1px solid $color-primary;
+  }
+
+  &--ghost:hover {
+    background-color: rgba($color-primary-light, .15);
+  }
+
+  // Button with filled background
+  &--contained,
+  &--contained:link,
+  &--contained:visited {
+    padding: .5rem 2rem;
+    background-color: $color-primary-light;
+    outline: none;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    color: $color-gray;
+  }
+
+  &--contained:hover {
     transform: translateY(-1px);
     box-shadow: 0 .7rem 1rem rgba($color-black, .2);
   }
 
-  &:active {
+  &--contained:active {
     transform: translateY(0);
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
 
+  // When applied to an element, the borders are gonna become round
+  &--round,
+  &--round:link,
+  &--round:visited {
+    border-radius: 50rem;
+  }
+
+  // CTA button has a darker primary color
   &--cta {
     &:link,
     &:visited {
       padding: 1.3rem 5rem;
       font-size: 2rem;
-      background-color: $color-primary-light;
+      background-color: $color-primary;
+      text-transform: uppercase;
     }
 
     &:active {
-      background-color: $color-primary;
+      background-color: $color-primary-dark;
     }
   }
 

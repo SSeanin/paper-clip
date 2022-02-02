@@ -2,6 +2,14 @@
   grid-column: center-start / center-end;
 }
 
+.section-projects {
+  display: grid;
+  // Responsive layout
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 4rem;
+}
+
 .section-discover {
   grid-row: discover-start / discover-end;
   grid-column: col-start 4 / col-end 5;

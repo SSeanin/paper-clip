@@ -1,3 +1,32 @@
 .showcase-card {
-  height: 45rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 47rem;
+  padding: 1.5rem 2rem;
+  border-radius: $border-radius-medium;
+  background-color: rgba($color-gray-light, .6);
+
+  text-align: center;
+
+  &__title {
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 1.2rem 2.2rem;
+  }
+
+  &__description {
+    font-size: 1.7rem;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: .7rem 2rem;
+  }
+
+  &__btn {
+    width: 80%;
+  }
 }

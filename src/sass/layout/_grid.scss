@@ -6,5 +6,6 @@
 
   &--home {
     grid-template-rows: [header-start] 95vh [header-end];
+    grid-row-gap: 10rem;
   }
 }

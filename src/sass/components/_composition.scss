@@ -1,0 +1,58 @@
+.composition {
+  position: relative;
+  height: 100%;
+
+  &__photo-container {
+    display: inline-block;
+    width: 12rem;
+    height: 20rem;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .2s;
+
+    &--left {
+      transform: translate(-90%, -50%) rotate(-15deg);
+      box-shadow: 0 .1rem 1rem rgba($color-black, .2);
+    }
+
+    &--middle {
+      z-index: 100;
+      transform: translate(-50%, -55%) scale(1.07);
+      box-shadow: 0 .2rem 1.5rem rgba($color-black, .2);
+    }
+
+    &--right {
+      transform: translate(-10%, -50%) rotate(15deg);
+      box-shadow: 0 .1rem 1rem rgba($color-black, .2);
+    }
+  }
+
+  &:hover &__photo-container {
+    &--left {
+      transform: translate(-110%, -50%) rotate(-5deg);
+    }
+
+    &--middle {
+      transform: translate(-50%, -52%) scale(1.05);
+      box-shadow: 0 .1rem 1.1rem rgba($color-black, .2);
+    }
+
+    &--right {
+      transform: translate(10%, -50%) rotate(5deg);
+    }
+  }
+
+  &__photo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+    transition: all .2s;
+  }
+
+  &:hover &__photo {
+    transform: scale(1);
+  }
+}

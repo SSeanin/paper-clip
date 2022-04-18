@@ -10,7 +10,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transition: all .2s;
+    transition: all .2s ease-out;
+    border-radius: $border-radius-small;
 
     &--left {
       transform: translate(-90%, -50%) rotate(-15deg);
@@ -49,7 +50,7 @@
     height: 100%;
     width: 100%;
     transform: scale(1.1);
-    transition: all .2s;
+    transition: all .2s ease-out;
   }
 
   &:hover &__photo {

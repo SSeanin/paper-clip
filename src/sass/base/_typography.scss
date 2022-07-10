@@ -3,7 +3,7 @@
 body {
   // Global font
   font-family: $font-primary;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   font-style: italic;
   line-height: 1.6;
@@ -12,7 +12,6 @@ body {
 
 .heading-primary {
   backface-visibility: hidden;
-  margin-bottom: 5.5rem;
 
   &--main {
     text-transform: uppercase;
@@ -21,8 +20,6 @@ body {
     font-size: 6.5rem;
     letter-spacing: .6rem;
     font-weight: 400;
-
-    animation: fadeInRight .7s ease-out;
   }
 
   &--sub {
@@ -32,8 +29,6 @@ body {
     letter-spacing: .5rem;
     font-size: 3rem;
     font-weight: 400;
-
-    animation: fadeInLeft .7s ease-out;
   }
 }
 

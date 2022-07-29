@@ -1,5 +1,6 @@
 .header {
   grid-column: full-start / full-end;
+  grid-row: header-start / header-end;
 
   // Centering the header__text-box
   display: flex;
@@ -7,8 +8,9 @@
   align-content: center;
   justify-content: center;
 
-  &__text-box {
+  &__content {
     align-self: center;
     text-align: center;
+    position: fixed;
   }
 }

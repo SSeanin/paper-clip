@@ -28,3 +28,8 @@ $color-gray-dark: #333;
 $border-radius-large: 1.5rem;
 $border-radius-medium: 3px;
 $border-radius-small: 2px;
+
+// ----------------- SHADOW ------------------
+$btn-box-shadow: 0 1rem 2rem rgba($color-black, .2);
+$btn-box-shadow-focus: 0 .3rem .7rem rgba($color-black, .2);
+$header-title-text-shadow: 0 .5rem 1rem rgba($color-black, .3);

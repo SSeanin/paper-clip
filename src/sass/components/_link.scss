@@ -1,12 +1,18 @@
 .link {
-  text-decoration: none;
-  color: currentColor;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: currentColor;
+  }
 
   &--inline {
-    padding-bottom: 2px;
-    margin-left: .5rem;
-    border-bottom: 1px solid transparent;
-    transition: all .2s ease-in-out;
+    &:link,
+    &:visited {
+      padding-bottom: 2px;
+      margin-left: .5rem;
+      border-bottom: 1px solid transparent;
+      transition: all .2s ease-in-out;
+    }
 
     & > svg {
       fill: currentColor;
@@ -15,7 +21,8 @@
       margin-right: 2px;
     }
 
-    &:hover {
+    &:hover,
+    &:active, {
       border-bottom: 1px solid currentColor;
     }
   }

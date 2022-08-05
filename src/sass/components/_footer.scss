@@ -2,11 +2,7 @@
   text-align: center;
   font-size: 1.5rem;
 
-  &__heart-icon {
-    font-style: normal;
-  }
-
-  &__rust-icon {
+  [class$='-icon'] {
     font-style: normal;
   }
 }

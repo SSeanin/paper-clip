@@ -1,0 +1,7 @@
+.footer {
+  grid-row: footer-start / footer-end;
+  grid-column: inner-center-start / inner-center-end;
+
+  display: flex;
+  flex-direction: column;
+}

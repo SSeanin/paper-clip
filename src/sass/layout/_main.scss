@@ -1,9 +1,0 @@
-.inner-container {
-  z-index: 100;
-  grid-column: full-start / full-end;
-
-  display: grid;
-  grid-template-columns: [main-full-start] minmax(8rem, 1fr)
-          [main-center-start] repeat(8, [main-col-start] minmax(min-content, 14.6rem) [main-col-end]) [main-center-end]
-          minmax(8rem, 1fr) [main-full-end];
-}

@@ -8,7 +8,15 @@
 
   &__meta {
     margin-bottom: 2.6rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+
+    & > span:not(:last-child) {
+      &::after {
+        display: inline-block;
+        content: '|';
+        margin: 0 .7rem;
+      }
+    }
   }
 
   &__link,

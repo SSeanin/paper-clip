@@ -1,3 +1,7 @@
 .section-stories {
   margin-top: -8rem;
+
+  & .pagination__action {
+    text-align: center;
+  }
 }

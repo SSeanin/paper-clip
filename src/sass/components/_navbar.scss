@@ -2,7 +2,21 @@
   font-style: normal;
   font-family: $font-display;
   color: $color-white;
+  z-index: 100;
 
+  &__content {
+    .nav {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  &--admin &__content {
+    .nav {
+      visibility: visible;
+      display: inline-block;
+    }
+  }
 
   &__title {
     &--main {

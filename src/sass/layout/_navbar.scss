@@ -1,6 +1,18 @@
 .nav-bar {
+  color: $color-white;
   grid-column: full-start / full-end;
   grid-row: nav-start / nav-end;
   position: sticky;
   top: 0;
+
+  display: grid;
+  grid-template-columns: minmax(3.5%, 1fr) [content-start] minmax(min-content, 120rem) [content-end] minmax(3.5%, 1fr);
+
+  &__content {
+    grid-column: content-start / content-end;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

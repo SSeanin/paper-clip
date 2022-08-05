@@ -1,0 +1,9 @@
+@mixin horizontal-divider-small() {
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 5rem;
+    background-color: rgba($color-black, .1);
+  }
+}

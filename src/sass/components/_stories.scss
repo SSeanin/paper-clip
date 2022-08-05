@@ -1,0 +1,20 @@
+.section-stories {
+  background-color: $color-white;
+  box-shadow: $section-box-shadow;
+  padding: 11rem 12rem 15rem;
+
+  &__head {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 4rem;
+    margin-bottom: 8rem;
+
+    @include horizontal-divider-small;
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 3.3rem;
+  }
+}

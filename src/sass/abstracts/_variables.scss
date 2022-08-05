@@ -5,9 +5,9 @@ $font-display: 'Josefin Sans', sans-serif;
 
 // ----------------- COLORS --------------------
 // Primary color
-$color-primary: #00acc0ff;
-$color-primary-light: #00e4ff;
-$color-primary-dark: #006773;
+$color-primary: #00b593;
+$color-primary-light: #00dbb2;
+$color-primary-dark: #008269;
 
 // Background color
 $color-background-dark: #132c33;
@@ -33,3 +33,6 @@ $border-radius-small: 2px;
 $btn-box-shadow: 0 1rem 2rem rgba($color-black, .2);
 $btn-box-shadow-focus: 0 .3rem .7rem rgba($color-black, .2);
 $header-title-text-shadow: 0 .5rem 1rem rgba($color-black, .3);
+
+// ----------------- GRADIENT ----------------
+$header-gradient: linear-gradient(to right top, #006bc9, #008ecc, #00b0cc, #00ccc5, #00b593);

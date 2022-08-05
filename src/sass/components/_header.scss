@@ -1,9 +1,28 @@
 .header {
-  background-color: $color-primary;
+  background-image: $header-gradient;
   color: $color-white;
 
+  &__content {
+    &::before {
+      display: block;
+      content: 'S';
+      padding-top: 10rem;
+      font-family: $font-display;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 60rem;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgba($color-black, .1);
+      z-index: -100;
+    }
+  }
+
   &__title {
-    margin-bottom: 2.8rem;
+    margin: 0 17rem 2.8rem 17rem;
   }
 
   &__meta {
@@ -14,6 +33,7 @@
       &::after {
         display: inline-block;
         content: '|';
+        font-style: normal;
         margin: 0 .7rem;
       }
     }

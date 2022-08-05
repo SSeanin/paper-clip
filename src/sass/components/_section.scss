@@ -10,11 +10,10 @@
     padding-bottom: 4rem;
     margin-bottom: 5rem;
 
-    @include horizontal-divider-small;
+    @include horizontal-divider-small(3.3rem);
   }
 
   &__heading {
     display: inline-block;
-    margin-bottom: 3.3rem;
   }
 }
